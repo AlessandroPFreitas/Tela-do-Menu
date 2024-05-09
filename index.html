@@ -4,45 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esqueleto</title>
+  <title> Tela-do-Menu </title>
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <script defer src="app.js"></script>
 </head>
 <font face="arial">
 
   <body>
     <!--- Cabeçalho  -->
-    <header class="principal">
-
+    <header>
+      <!--Barra de Pesquisa-->
       <div class="procurar">
         <input type="text" placeholder="Pesquisar">
         <a href="#">
-          <img src="img/lupa.svg" alt="Lupa" >
+          <img src="img/lupa.svg" alt="Lupa">
         </a>
       </div>
 
+
+
+      <!--Login e Cadastro-->
+      <div class="acão">
+        <div class="perfil" onclick=" menudoperfilToggle();">
+          <img src="img/perifldousuario.svg" alt="Perfil">
+        </div>
+
+        <div class="menudoperfil">
+          <ul>
+            <li> <a href="#"> Login</a></li>
+            <li> <a href="#"> Cadastrar </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+        function menudoperfilToggle() {
+          const toggleMenudoperfil = document.querySelector('.menudoperfil');
+          toggleMenudoperfil.classList.toggle('active')
+        }
+
+      </script>
+
+      <!--Logo do Eventraker-->
       <div class="logo">
         <img src="img/logo.svg" alt="Logo">
       </div>
 
-      <div class="usuario">
-        <a href="#">
-          <img src="img/perfil de usuario.svg" alt="Perfil" >
-        </a>
-      </div>
+ <div class="mobilemenu">
+  <div class="line1"></div>
+  <div class="line2"></div>
+  <div class="line3"></div>
+ </div>
 
-    </header>
-    <nav>
+ </header>
+      <!--Parte de Baixo do Cabeçalho-->
+   
+    <nav >
 
       </div>
       <div class="texto">
-        <ul>
+        <ul class="nav-list">
           <li> <a href="@"> Home </a></li>
-          <li> <a href="@"> Cadastrar </a></li>
-          <li> <a href="@"> Sobre Nós </a></li>
+          <li> <a href="@"> Sobre </a></li>
           <li> <a href="@"> Eventos </a></li>
           <li> <a href="@"> Contato </a></li>
         </ul>
       </div>
+      
     </nav>
 
     <!---  Menu -->
@@ -52,10 +80,9 @@
 
     <!---  Rodapé  -->
     <footer>
-      <img src="">
+
     </footer>
-
-
+    <script src="app.js"></script>
 
   </body>
 
