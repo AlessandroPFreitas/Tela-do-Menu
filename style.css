@@ -164,7 +164,7 @@ nav {
 
 .nav-list li {
  letter-spacing: 3px;
- margin-left: 32px;
+ margin-left: 80px;
 
 }
 
@@ -181,8 +181,11 @@ nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-/*
+
 .mobilemenu div{
+ 
+  position: relative;
+  top: 108px;
  width: 32px;
  height: 2px;
  background: #ffffff;
@@ -190,11 +193,10 @@ nav {
 }
 
 .mobilemenu {
-  display: none;
   cursor: pointer;
 }
 
-
+/*
 @media (max-width:999px){
  body {
   overflow: hidden;
