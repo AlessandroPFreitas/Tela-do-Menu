@@ -32,7 +32,7 @@ a {
   padding-inline: 16px;
 }
 
-.acão {
+/* .acão {
     position: fixed;
     top: 5px;
     right: 30px;
@@ -111,7 +111,7 @@ a {
   .acão .menudoperfil ul li:hover a {
     color: #ff5d94;
   
-  }
+  } */
 
 .nav {
   max-width: 1280px;
@@ -128,16 +128,21 @@ a {
 }
 
 .lista {
+  position: relative;
   display: flex;
   gap: 32px;
   list-style: none;
 }
+
 
 .lista a {
   font-size: 18px;
   color: #fff;
   padding-block: 16px;
 }
+
+
+
 
 .hamburguer {
   display: none;
@@ -169,10 +174,7 @@ a {
     font-size: 24px;
  }
 
-    .acão .perfil img {
-        display: none;
-  
- }
+    
 
    
 
